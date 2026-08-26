@@ -1,0 +1,43 @@
+{
+  "model_type": "XGBoostClassifier",
+  "dataset": "SYNTHETIC_DEMO_ONLY",
+  "n_samples": 2000,
+  "random_seed": 42,
+  "features": [
+    "age",
+    "mmse_score",
+    "avg_pause_duration",
+    "vocab_richness",
+    "reaction_time_ms",
+    "family_history"
+  ],
+  "classes": [
+    "Low",
+    "Moderate",
+    "High"
+  ],
+  "metrics": {
+    "accuracy": 0.9875,
+    "precision_weighted": 0.9876,
+    "recall_weighted": 0.9875,
+    "f1_weighted": 0.9875,
+    "confusion_matrix": [
+      [
+        198,
+        2,
+        0
+      ],
+      [
+        0,
+        118,
+        2
+      ],
+      [
+        0,
+        1,
+        79
+      ]
+    ]
+  },
+  "disclaimer": "This model was trained on SYNTHETIC data for research/demo purposes only. It is NOT a validated clinical tool and must NOT be used for medical diagnosis."
+}

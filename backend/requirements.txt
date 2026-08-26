@@ -1,0 +1,37 @@
+# NeuroSense AI — Backend Dependencies
+# Install with: pip install -r requirements.txt
+
+# ── Core API Framework ────────────────────────────────────────────
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
+python-dotenv==1.0.1
+aiofiles==23.2.1
+
+# ── Database ──────────────────────────────────────────────────────
+sqlalchemy==2.0.30
+pydantic==2.7.1
+
+# ── Data Science ─────────────────────────────────────────────────
+pandas==2.2.2
+numpy==1.26.4
+
+# ── Machine Learning ─────────────────────────────────────────────
+scikit-learn==1.4.2
+xgboost==2.0.3
+joblib==1.4.2
+shap==0.45.1
+
+# ── Audio Processing ─────────────────────────────────────────────
+librosa==0.10.2
+scipy==1.13.0
+
+# ── NLP ───────────────────────────────────────────────────────────
+nltk==3.8.1
+
+# ── Speech Transcription (optional) ──────────────────────────────
+# Uncomment ONE of the following if you want real Whisper transcription.
+# Requires ffmpeg to be installed: https://ffmpeg.org/download.html
+#
+# openai-whisper==20231117
+# faster-whisper==1.0.3
